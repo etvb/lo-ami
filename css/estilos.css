@@ -1,0 +1,107 @@
+body{
+	font-size: 19px;
+	box-sizing: border-box;
+
+}
+
+.Nav{
+	background-color: white;
+	/*height: 3em;*/
+	/*text-align: center;*/
+	position: fixed;
+	padding: 1em;
+	width: 100%;
+	z-index: 1;
+}
+
+.Nav-ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+
+
+.Nav-a{
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+
+.Main{
+	padding-top: 3em;
+}
+
+.Main-baner{	
+	height: 250px;
+	background-image: url('../img/baner.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Main-nombre{
+	font-size: 2em;
+	text-align: center;
+}
+
+.Proyectos{
+	/*align-content: space-around;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.Proyectos-secciones{
+	border: 1px solid black;
+	flex: 0 0 0;
+	position: relative;
+	margin-bottom: 10px;
+}
+.Proyectos-secciones:hover .Proyectos-span{
+	visibility: visible;
+	
+}
+
+.Proyectos-img{
+	text-align: center;
+	width: 500px;
+	height: 200px;
+	display: block;
+}
+
+.Proyectos-img:hover .Proyectos-span{
+	visibility: visible;
+}
+
+.Proyectos-span{
+	color: white;
+	/*background-color: rgba(0,0,0,.8); */
+	visibility: hidden;
+	font-size: 2em;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;	
+	padding: 10px 0;
+	margin: 0;
+	/*width: 100%;
+	height: 100%;
+*/}
+
+/*ilustracion digital*/
+.Contenedor{
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Contenedor-figure{
+	width: 420px;
+	height: auto;
+}
+.Contenedor-img{
+	width: 100%;
+}
