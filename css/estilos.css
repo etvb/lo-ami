@@ -19,14 +19,18 @@ body{
 	list-style: none;
 	justify-content: space-around;
 	margin: 0;
-	padding: 0;
 }
 
 
 .Nav-a{
-	color: black;
-	display: block;
+	/*margin: 0 10px 0 10px;*/
+	/*color: black;
+	display: block;*/
 	text-decoration: none;
+	/*--------------*/
+	background: rgba(255,255,255,.1);
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
+	padding:0 15px;
 }
 
 .Main{
@@ -61,7 +65,6 @@ body{
 }
 .Proyectos-secciones:hover .Proyectos-span{
 	visibility: visible;
-	
 }
 
 .Proyectos-img{
@@ -71,9 +74,6 @@ body{
 	display: block;
 }
 
-.Proyectos-img:hover .Proyectos-span{
-	visibility: visible;
-}
 
 .Proyectos-span{
 	color: white;
@@ -104,4 +104,69 @@ body{
 }
 .Contenedor-img{
 	width: 100%;
+}
+
+/*fotografia*/
+
+.Contenedor-f{
+	width: 100%;
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template:"1fr 1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+	grid-gap:5px;
+}
+
+.Contenedor-box{
+	/*position: relative;*/
+	background-color: #ccc;
+}
+
+.Contenedor-box img{
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+	width:100%;	
+	height: 100%;
+	object-fit: cover;
+}
+
+.a{
+	grid-row: span 2;
+}
+.b, .f, .h, .j{
+	grid-column: span 2;
+}
+
+@media(max-width: 991px){
+
+	.Contenedor-f{
+	width: 100%;
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template:"1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr" 33.33vh;
+	grid-gap:5px;
+	}
+
+}
+
+@media(max-width: 500px){
+
+	.Contenedor-f{
+		width: 100%;
+		display: grid;
+		grid-auto-flow: dense;
+		grid-template:"1fr 1fr" 33.33vh
+					  "1fr 1fr" 33.33vh
+					  "1fr 1fr" 33.33vh;
+		grid-gap:5px;
+	}
+
+	.h{
+		grid-column: span 1;	
+	}
+
 }
