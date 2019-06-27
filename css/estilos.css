@@ -43,6 +43,11 @@ body{
 	color:yellow;
 }
 
+.Nav-a:hover{
+	text-decoration: underline overline;
+}
+
+
 .Main{
 	/*display: flex;
 	flex-direction: column;*/
@@ -181,9 +186,20 @@ body{
 
 @media(max-width: 500px){
 
+body{
+	font-size: 14px;
+}
+
 .Main-baner{
 	width: 100%;
 	height: 110px;
+}
+
+.Nav-a{
+	border-radius: 35%;
+	padding: 10px;
+	text-decoration: 
+	
 }
 
 
