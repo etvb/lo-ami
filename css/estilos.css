@@ -90,9 +90,10 @@ body{
 
 .Proyectos-secciones{
 	/*border: 1px solid black;*/
-	flex: 0 0 0;
+	/*flex: 0 0 0;*/
 	position: relative;
 	margin-bottom: 10px;
+	width: 500px;
 }
 .Proyectos-secciones:hover .Proyectos-span{
 	visibility: visible;
@@ -100,8 +101,8 @@ body{
 
 .Proyectos-img{
 	text-align: center;
-	width: 500px;
-	height: 200px;
+	/*height: 200px;*/
+	width: 100%;
 	display: block;
 }
 
@@ -204,8 +205,9 @@ body{
 	
 }
 
-
-
+.Proyectos-span{
+	visibility: visible;
+}
 
 /*Pag fotografia*/
 	.Contenedor-f{
