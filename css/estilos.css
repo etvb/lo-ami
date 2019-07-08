@@ -124,6 +124,66 @@ body{
 	height: 100%;
 */}
 
+.CPerfil{
+	padding-top: 50px;
+}
+
+.CPerfil1, .CPerfil2{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.CPerfil1{
+	justify-content: center;
+}
+
+
+.CPerfil1-img{
+	overflow: hidden;
+	border-radius: 50%;
+	flex:0 0 10%;
+	height: auto;
+}
+
+.CPerfil-info{
+	flex: 0 0 50%;
+	text-align: center;
+
+}
+.CPerfil2{
+	justify-content:center;
+}
+
+.CPerfil2-logo{
+	flex:0 0 3%;
+	height: auto;
+}
+
+.CPerfil1-img img ,.CPerfil2-logo img{
+	width:100%;
+}
+
+.CPerfil2-info{
+	flex: 0 0 70%;
+	text-align: center;
+}
+
+.contacto{
+	text-align: center;
+}
+
+.contacto img{
+	margin: 30px 10px 500px 10px;
+}
+
+
+
+
+
+
+
+
 /*ilustracion digital*/
 .Contenedor{
 	/*border: 1px solid red;*/
@@ -189,6 +249,15 @@ body{
 
 @media(max-width: 991px){
 
+
+	.CPerfil1-img{
+		flex: 0 0 20%;
+	}
+
+	.CPerfil2-logo{
+		flex:0 0 8%;
+	}
+
 	.Contenedor-f{
 	width: 100%;
 	display: grid;
@@ -222,6 +291,14 @@ body{
 .Proyectos-span{
 	visibility: visible;
 }
+
+/*.CPerfil1-img{
+	flex: 0 0 20%;
+}
+
+.CPerfil2-logo{
+	flex:0 0 8%;
+}*/
 
 /*Pag fotografia*/
 	.Contenedor-f{
