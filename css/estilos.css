@@ -316,3 +316,12 @@ body{
 	}
 
 }
+
+/* reel */
+.Contenedor-video{
+	width: 50%;
+}
+.video{
+	
+	width: 100%;
+}
